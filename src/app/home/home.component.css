@@ -1,0 +1,50 @@
+.container{
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.text{
+  color: #ed1b24;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.text h1{
+  font-weight: bold;
+}
+
+.text p{
+  color: black;
+}
+
+input{
+  display: block;
+  width: 400px;
+  margin: auto;
+  height: 43px;
+  padding-right: 13px;
+  font-weight: bolder;
+  border: 1px solid #ddd;
+  font-family: 'Thfont';
+  outline-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+button{
+  width: 100%;
+  background-color: #c31e1e;
+  margin: 20px auto 50px auto;
+  display: block;
+  color: white;
+  font-size: 18px;
+  border: none;
+  font-family: 'Thfont';
+  cursor: pointer;
+  line-height: 40px;
+}

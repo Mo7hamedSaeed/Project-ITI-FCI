@@ -1,0 +1,15 @@
+<html lang="ar" dir="rtl">
+  <div class="container">
+    <div class="text">
+      <h1>نتيجة الثانوية العامة 2023</h1>
+      <p>نتيجة الثانوية العامة مجاناً وحصرياً</p>
+    </div>
+    <div>
+      <input [(ngModel)]="studentId" placeholder="رقم الجلوس">
+      <div *ngIf="studentNotFound">
+        <p style="text-align: center; color: #dc3545;">رقم الجلوس غير صحيح</p>
+      </div>
+      <button (click)="checkStudentSeatingNo()">النتيجة</button>
+    </div>
+  </div>
+</html>

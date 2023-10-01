@@ -1,0 +1,31 @@
+<html lang="ar" dir="rtl">
+  <div class="container">
+    <div class="row" *ngIf="!loading">
+      <div
+        class="card col-lg-4 mx-2 mt-4"
+        *ngFor="let s of allStudents"
+        style="width: 300px">
+        <a [routerLink]="['/student',s.seating_no]">
+          <div class="card-body" >
+            <p class="card-title" style="background-color: rgb(36, 36, 209); text-align: center; color: white; padding: 10px;">رقم الجلوس  : {{ s.seating_no }}</p>
+          </div>
+        </a>
+        <div class="card-body" style="overflow: hidden;">
+          <h6 class="card-title">الاسم  : {{ s.arabic_name }}</h6>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">الدرجة  : <span>410 / {{s.total_degree}}</span></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="text-center d-flex justify-content-center align-items-center w-100" *ngIf="loading">
+      <app-spinner></app-spinner>
+    </div>
+  </div>
+
+</html>
+
+
+

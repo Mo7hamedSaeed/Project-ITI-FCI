@@ -1,0 +1,36 @@
+<html lang="ar" dir="rtl">
+  <div class="container">
+    <div class="title">
+      <h6>بيانات الطالب</h6>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th> رقم الجلوس </th>
+          <th> مجموع الدرجات </th>
+          <th> النسبة المئوية </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{selectedStudent.seating_no}}</td>
+          <td>{{selectedStudent.total_degree}}</td>
+          <td>{{selectedStudent.percentage}} %</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="data">
+      <ul>
+        <li>الأسم : <span>{{selectedStudent.arabic_name}}</span></li>
+        <li>حالة الطالب : <span>{{selectedStudent.student_case_desc}}</span></li>
+        <li>نوعية التعليم : <span> طلاب</span></li>
+      </ul>
+    </div>
+    <button routerLink="">اظهار نتيجة اخرى</button>
+  </div>
+  <div class="g">
+    <div class="text-center d-flex justify-content-center align-items-center w-100" *ngIf="loading">
+      <app-spinner></app-spinner>
+    </div>
+  </div>
+</html>

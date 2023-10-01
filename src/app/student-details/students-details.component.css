@@ -1,0 +1,101 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #c31e1e;
+  height: 43px;
+  border: 1px solid #ddd;
+}
+.title h6{
+  margin-bottom: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse:collapse;
+  border: 1px solid #ddd;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  color: black;
+  margin-bottom: .5rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  color: #c31e1e;
+  margin-bottom: .5rem;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.data ul {
+  list-style: none;
+}
+
+.data li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  margin: 5px;
+}
+
+.data span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button{
+  background-color: #c31e1e;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Thfont';
+  cursor: pointer;
+  line-height: 40px;
+}
